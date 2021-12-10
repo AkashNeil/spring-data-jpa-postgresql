@@ -14,6 +14,7 @@ Description : Project using Spring Data JPA & PostgreSQL.
 Docker :
 - ls into the folder which contains the 'docker-compose.yml' file.
 - Type the command docker compose up -d
+  - In case of an error like `The container name "/pgadmin" is already in use by ...` ; then do a `docker rm /pgadmin` to remove it.
 - Type docker compose ps to see if it is up and running
 
 PostgreSQL :
