@@ -1,5 +1,9 @@
 package io.github.seebaware.springdatajpapostgresql;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 import static javax.persistence.GenerationType.SEQUENCE;
@@ -11,6 +15,9 @@ import static javax.persistence.GenerationType.SEQUENCE;
                 @UniqueConstraint(name = "student_email_unique", columnNames = "email")
         }
 )
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Student {
 
     @Id
@@ -57,59 +64,10 @@ public class Student {
     )
     private Integer age;
 
-    public Student(Long id,
-                   String firstName,
-                   String lastName,
-                   String email,
-                   Integer age) {
-        this.id = id;
+    public Student(String firstName, String lastName, String email, Integer age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.age = age;
-    }
-
-    public Student() {
-
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
         this.age = age;
     }
 
