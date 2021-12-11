@@ -1,4 +1,4 @@
-package io.github.seebaware;
+package io.github.seebaware.springdatajpapostgresql;
 
 import javax.persistence.*;
 
@@ -124,3 +124,4 @@ public class Student {
                 '}';
     }
 }
+
