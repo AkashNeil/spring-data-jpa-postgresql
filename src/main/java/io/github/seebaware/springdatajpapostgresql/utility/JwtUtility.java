@@ -54,12 +54,12 @@ public class JwtUtility implements Serializable {
     /*
     While creating the token
     1. Define  claims of the token : Issuer, Expiration, Subject, and the ID
-    2. Sign the JWT using the RS512 algorithm and secret key.
+    2. Sign the JWT using the signature algorithm and secret key.
     */
     private String doGenerateToken(Map<String, Object> claims, String subject) {
         return Jwts.builder().setClaims(claims).setSubject(subject).setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY * 1000))
-                .signWith(SignatureAlgorithm.RS512, secretKey).compact();
+                .signWith(SignatureAlgorithm.HS512, secretKey).compact();
     }
 
     public Boolean validateToken(String token, UserDetails userDetails) {
