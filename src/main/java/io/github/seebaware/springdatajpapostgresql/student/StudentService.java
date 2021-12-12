@@ -1,4 +1,4 @@
-package io.github.seebaware.springdatajpapostgresql.Student;
+package io.github.seebaware.springdatajpapostgresql.student;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

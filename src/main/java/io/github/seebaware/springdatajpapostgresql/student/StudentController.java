@@ -1,4 +1,4 @@
-package io.github.seebaware.springdatajpapostgresql.Student;
+package io.github.seebaware.springdatajpapostgresql.student;
 
 import com.google.common.base.Preconditions;
 import org.springframework.beans.factory.annotation.Autowired;

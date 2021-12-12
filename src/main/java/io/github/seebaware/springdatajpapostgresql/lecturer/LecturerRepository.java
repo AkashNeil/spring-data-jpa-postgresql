@@ -1,4 +1,4 @@
-package io.github.seebaware.springdatajpapostgresql.Lecturer;
+package io.github.seebaware.springdatajpapostgresql.lecturer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

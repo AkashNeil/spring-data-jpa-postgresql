@@ -1,6 +1,5 @@
-package io.github.seebaware.springdatajpapostgresql.Student;
+package io.github.seebaware.springdatajpapostgresql.student;
 
-import io.github.seebaware.springdatajpapostgresql.Student.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface StudentRepository extends JpaRepository<Student, Long> {
