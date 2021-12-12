@@ -7,8 +7,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public record StudentService(
-        @Autowired StudentRepository studentRepository) {
+public class StudentService {
+
+    @Autowired
+    StudentRepository studentRepository;
 
     public StudentService(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
