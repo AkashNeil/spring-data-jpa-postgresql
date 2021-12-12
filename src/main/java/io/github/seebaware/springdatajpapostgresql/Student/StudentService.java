@@ -7,10 +7,8 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class StudentService {
-
-    @Autowired
-    private final StudentRepository studentRepository;
+public record StudentService(
+        @Autowired StudentRepository studentRepository) {
 
     public StudentService(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
@@ -22,5 +20,17 @@ public class StudentService {
 
     public Optional<Student> findById(Long id) {
         return studentRepository.findById(id);
+    }
+
+    public Student create(Student student) {
+        return studentRepository.save(student);
+    }
+
+    public Student update(Student student) {
+        return studentRepository.save(student);
+    }
+
+    public void deleteById(Long id) {
+        studentRepository.deleteById(id);
     }
 }
