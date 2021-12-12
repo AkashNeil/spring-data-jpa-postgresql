@@ -1,5 +1,7 @@
 package io.github.seebaware.springdatajpapostgresql;
 
+import io.github.seebaware.springdatajpapostgresql.Student.Student;
+import io.github.seebaware.springdatajpapostgresql.Student.StudentRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

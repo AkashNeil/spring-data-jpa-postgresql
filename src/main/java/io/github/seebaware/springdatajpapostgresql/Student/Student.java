@@ -1,4 +1,4 @@
-package io.github.seebaware.springdatajpapostgresql;
+package io.github.seebaware.springdatajpapostgresql.Student;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
