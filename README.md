@@ -5,7 +5,7 @@
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
-Description : Project using Spring Data JPA & PostgreSQL.
+Description : Project using Spring Data JPA & PostgreSQL. Also includes Spring Security & JWT.
 
 ---
 
@@ -30,3 +30,13 @@ PostgreSQL :
       - Username = seebaware
       - Password = password
       - Save password = True
+
+Security :
+
+... for e.g.
+```json
+{
+"username" : "admin",
+"password" : "password"
+}
+```
