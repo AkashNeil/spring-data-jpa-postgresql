@@ -12,10 +12,10 @@ Description : Project using Spring Data JPA & PostgreSQL. Also includes Spring S
 <h3>Running the project</h3>
 
 <h4>Docker :</h4>
-* ls into the folder which contains the 'docker-compose.yml' file. 
-* Type the command docker compose up -d 
-  * In case of an error like `The container name "/pgadmin" is already in use by ...` ; then do a `docker rm /pgadmin` to remove it. 
-* Type docker compose ps to see if it is up and running
+- ls into the folder which contains the 'docker-compose.yml' file. 
+- Type the command docker compose up -d 
+  - In case of an error like `The container name "/pgadmin" is already in use by ...` ; then do a `docker rm /pgadmin` to remove it. 
+- Type docker compose ps to see if it is up and running
 
 <h4>PostgreSQL :</h4>
 - Go to your browser and go to 'localhost:5050/browser' (port as found in the 'docker-compose.yml' file) to open pgAdmin.
